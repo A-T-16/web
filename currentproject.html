@@ -1,77 +1,51 @@
-<HTML>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Current Project</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
-          background-image: url('background.png');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: 100% 100%;
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: #FFDE59;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .header {
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header button {
+            margin: 0 5px;
+            background: #222;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .header a {
+            color: #FFDE59;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            color: #FFDE59;
+            margin-top: 80px;
         }
     </style>
-
+</head>
+<body>
     <div class="header" id="myHeader">
-        <BUTTON><A HREF="index.html">HOME</a></BUTTON>
-        <BUTTON><A HREF="projects.html">OUR PROJECTS</a></BUTTON>
-        <BUTTON><A HREF="currentproject.html">CURRENT PROJECT: RC CARS</a></BUTTON>
-        <BUTTON><A HREF="https://github.com/pslind17/web">GITHUB PAGE</a></BUTTON>
-        <BUTTON><A HREF="log.html">LOGBOOK FOR LABS</a></BUTTON>
-        <BUTTON><A HREF="blog.html">BLOG</a></BUTTON>
-            <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </div><BR><BR>
-
-        
-
-        <style>
-            .pdf {
-                width: 100%;
-                aspect-ratio: 4 / 3;
-            }
-            .pdf,
-            html,
-            body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-           h1,
-            h3 {
-                text-align: center;
-            }
-        
-            h1 {
-                color: "#FFDE59";
-            }
-        </style>
-        
-        <body text = "#FFDE59">
-                <CENTER><h1>RC CARS</h1></CENTER><br>
-                <h3>Electronic component dimensions:</h3><br>
-                <iframe class="pdf" 
-                        src=
-        "ESC Dimensions.pdf"
-                    width="800" height="500">
-                </iframe><br>
-                <iframe class="pdf" 
-                        src=
-        "Servo Dimensions.pdf"
-                    width="800" height="500">
-                </iframe><br>
-                <iframe class="pdf" 
-                        src=
-        "Motor dimensions.pdf"
-                    width="800" height="500">
-                </iframe><br><br>
-                Onshape document for cad models <A HREF="https://cad.onshape.com/documents/33992c37a318b0eb12e37ffd/w/5c4adfd66746b6ab506c3f6a/e/89b78e41c83d5045c66e2fd4?renderMode=0&uiState=678c12456acb6d60d7b35edd">here.</a><br><br>
-                <h3>Components list:</h3>
-                <A HREF="https://www.amazon.com/gp/product/B01CCB9IGG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01CCB9IGG&linkCode=as2&tag=bananascience-20&linkId=f54f3a91c2962836e52aa7d834e89b85">GoolRC 2.4G 3CH AFHS Radio Remote Control Transmitter with Receiver for RC Car Boat</a><br>
-                <A HREF="https://www.amazon.ca/HOOYIJ-Digital-Helicopter-PWM500-2500-Controllable/dp/B0D6YM82NZ/ref=sr_1_1_sspa?crid=NBLI6LV5FWD9&keywords=Maxmoral+2pcs+MG90S+9g+Metal+Gear+Micro+Tower+Pro+Servo+Upgraded+SG90+Digital+Micro+Servos+for+RC+Vehicle+Helicopter+Boat+Car+Models&qid=1733358115&sprefix=maxmoral+2pcs+mg90s+9g+metal+gear+micro+tower+pro+servo+upgraded+sg90+digital+micro+servos+for+rc+vehicle+helicopter+boat+car+models%2Caps%2C274&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">9g Full Metal Gear Digital Micro RC Servo</a><br>
-                <A HREF="https://www.amazon.ca/Hobbypark-Brushless-Electric-Controller-Prerunner/dp/B08R1MJKNN/ref=sr_1_7?crid=1HA5P5XGM7GDN&dib=eyJ2IjoiMSJ9.tS6OmoZEr9THmp8iQLws9sm5Ny6a-2p6OyBLu9_eF6O2ehDihT3H_ep7-0wo5C1MoyI7Jem8kvuQpopjs7SKBnHnubRhVSm6Evw2Sgy-UuQ-bwp1-Waye9FfbrSxGpsO1ybJOtZVs7mCddkZHA7D0JVHOaR9ph1J8qxnmqxyM4vAh6VZVsNNEGH3eCKzqiPVfq39q-lCSgWJfK2TeSF6wUgHs-H3HSA4zPSORANhOwLT753Xd1Jhl8w2aityT3IV5fMQyy67l2M2-OHdZLVMR8Hhkk40pEidFjv2qqgGW_I.cbeirjRIhgM5HlkXKjW9AdYf8ii6JT78RsU0R-YV8LI&dib_tag=se&keywords=brushless+motor+esc&qid=1733359104&sprefix=brushless+motor+esc%2Caps%2C196&sr=8-7"> 2435 4800KV Brushless Motor and ESC Combo 25A</a><br>
-                <A HREF="https://www.amazon.ca/URGENEX-2000mAh-Battery-Rechargeable-Charger/dp/B0C37LD526/ref=sr_1_1_sspa?crid=18DKUDRHF30DZ&dib=eyJ2IjoiMSJ9.uX8ioH4ryCM517Rla1eQBvhEB62y9vh36qulJSYi_Cb3SDYNqm-QSaJTDUyfEdTMjZlW3HWVFGMeEXHv5WbNAfGPCp5yVofe0aI6ktHGBEhefaeAvZjN1D43tQFlXYoDCgeZWq_guLumc_RSptP7WWvjwB-6qZrOV5pcP2QSNm924G2CfDQ_wGqyYwIVj1qDk4zfPxKgfwYJbpPpLyFqrdJPsncssM-8ieQeOQKXlHuHnobRusagEBWdyGIBhjNRtfFrrO520n7NTu6SvjrmgKE4yYnK6J99SpHOMUdJDHQ.mf2b-VgB2FiXo1BPQoCupWmnZsI_oQVR7tKQz10t_YA&dib_tag=se&keywords=25a+rc+battery+2+cells&qid=1734310243&sprefix=25a+rc+battery+2+cell%2Caps%2C138&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">URGENEX 2000mAh 7.4 V Li-ion Battery</a><br>
-                <A HREF="https://www.amazon.ca/1760pcs-Metric-Assortment-Upgrade-Wrenches/dp/B0C38YFL3D/ref=sr_1_2_sspa?crid=2V0G77K7G9FRK&dib=eyJ2IjoiMSJ9.S8fj97OCZDHomw7aPoImLMn-WA854NybBX4EUtnq7vW_i4jzpmOItC3QPthlrDB0nfgkVWWmd-C6RiippQgPgPoobtR2UZrjJf54oBfncyVIU4v-dzwf0XMld36042XcqLb22mkH7R2nknFbywjMvTQG_DeqpJhRYmkkITv0MxJWp1oqcM8JCzudv34112K4Xc0saFLANQjEvvq1rnINF-MMDyFDlw-oKMeTMla6tUve4Pykp3Cd4LtXuVWS8S4J84cZQLHZW33JiM_XtUZ6C0ImuEfXRp90gCUrfX_Uslc.ZS4aFelXQbXu5cNBeYKV6-qWbur3rb0YR4xH7zO5R0c&dib_tag=se&keywords=m5%2Bbolt%2Bkit&qid=1735850683&sprefix=m5%2Bbolt%2Bkit%2Caps%2C152&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">M2 M3 M4 M5 Metric Screw Assortment</a><br>
-                <A HREF="https://www.amazon.ca/uxcell-5x16x5mm-Miniature-Lubricated-Bearings/dp/B0D54LSJG6/ref=sr_1_3_sspa?crid=8KYQGE0BU4N3&dib=eyJ2IjoiMSJ9.IzvM-i72f4l1Vqg7ibZZ4D1U84pXku_cPpEnDCBwUPyuAFwnVKneoALpKugwuj67CF7W4JqU5G3xIkNUwA5VsLkm4pSbk3wBmoseVsBrNxNjvpa75wv-In811UVc1N04NK9pIG4ynOAAp1e98_FnNKO297T4g219kZXO-OarhLSQ8ZyjryDdWi8UUibSf7WSP1FyaEWyGrcnd4RHFxXTl6KstVKbJAKlJCBoIxwTQsPd1OPC1trgh_OC82in0L7O8xnyxlSRTMNPe5MWMcGmuGRtW-ZmqQzb0aagtdtN2NU.cre-uUim33x0TUGPC6xsHm-usFYk8L5ZugZJPvew8fo&dib_tag=se&keywords=uxcell%2B625-2RS%2BDeep%2BGroove%2BBall%2BBearing%2B5x16x5mm&qid=1737315553&sprefix=uxcell%2B625-2rs%2Bdeep%2Bgroove%2Bball%2Bbearing%2B5x16x5mm%2Caps%2C172&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">uxcell 625-2RS Deep Groove Ball Bearing 5x16x5mm</a><br>
-                <A HREF="https://www.amazon.ca/uxcell-150mm-Threaded-Stainless-Threads/dp/B09LH1399B/ref=sr_1_7?crid=21MKV5INRJV5Z&dib=eyJ2IjoiMSJ9.H2Rl6jOowEWHOcZFx8Mju7NWgtF6C5VXVFjak5dWxaijWYqOMbabmGuM1oJ28Q6ZyQCsOTuVnCrjeanStkQ4p_75Pe1oK75VKq4HARdlGwIB3nRzVGXyoHamDocjzCt3EH-ILkJL4kKr02kHDl_L1QuVbTiM1nPatyDoJvD_O1x_1omSgHUAjCUBY0j5r13TmY40-TIX6otXEJUqdXgoKaGou1mevsdRJT7bBY2JWjsBcMQhllOB4HuA32dBzEdWz-YoYBQRFlPKrQF2zgzQFtGfqwtsb9Y5pEimsbgZU2WeC7DKTuRyn_hDfZoykJkAL6K78Pu4Gz3hR060nveRT9ZwIsALFnrhhyOLiokdK0RADjNcl3HIH3kpJZnKN67zv5K7G2MI9Zvrkak2Tc_UqmmPhYxGNt3OKGjSDxoq-2AIMmdcNMSHXPd9ctiKe4CD.LzPJjvWRP2ILHu9R2LRMS96sTRuf1XDRxFKg6ar2pxY&dib_tag=se&keywords=HiPicco+M5+x+150mm+Fully+Threaded+Rod&qid=1737315723&sprefix=hipicco+m5+x+150mm+fully+threaded+rod%2Caps%2C211&sr=8-7">HiPicco M5 x 150mm Fully Threaded Rod</a><br>
-                <A HREF="https://www.amazon.ca/Amazon-Basics-48-AA-High-Performance/dp/B00MNV8E0C/ref=sr_1_1_ffob_sspa?crid=1KMGFJRXXQTA5&dib=eyJ2IjoiMSJ9.jYpHcgVMAWZ7w3BlPVV4EVY4ltJoWcPep9fN7GqkulQMUoakeh9PaTMgzAo3CvRHRH2juRRQY6fIlmXx-cwhBfrroGlGJ0HUQ5zQu1uLfeAL_LAb9cGVKgfaR_1Sm2_34MZIYcAG6AqBQXHOLqthgk2eMVbY0CIc5J9Osb9G8Jo0UFPtMf5gS1yOUkYXp4JwpyuzgewHJYk9UdPvitk9Tja9foP15ldKaNP05jWTjWXGg6Un7A_gxf4WzykClvfbpCk5RulqrzFd6LKgUDaGsWhTdKt-BnXd_1LnkJPldm8.xf2AjoabhcTdQybzJXjgI-QgpT0xrYkehdbz9JnLgrk&dib_tag=se&keywords=Amazon+Basics+48+Pack+AA+High-Performance+Alkaline+Batteries&qid=1737315852&sprefix=amazon+basics+48+pack+aa+high-performance+alkaline+batteries%2Caps%2C126&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Amazon Basics 48 Pack AA High-Performance Alkaline Batteries</a><br>
-                <A HREF="https://www.aliexpress.com/w/wholesale-2mm-shaft-14t-pinion.html?spm=a2g0o.productlist.search.0">GPM 40Cr Steel Pinion Gear</a><br>
-        </body>
-
-</HTML>
+        <button><a href="index.html">HOME</a></button>
+        <button><a href="projects.html">OUR PROJECTS</a></button>
+        <button><a href="currentproject.html">CURRENT PROJECT</a></button>
+        <button><a href="https://github.com/pslind17/web">GITHUB PAGE</a></button>
+        <button><a href="log.html">LOGBOOK FOR LABS</a></button>
+        <button><a href="blog.html">BLOG</a></button>
+    </div>
+    <h1>No current projects at this time.</h1>
+</body>

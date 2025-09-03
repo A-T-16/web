@@ -1,48 +1,92 @@
-<HTML>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ad Astra Blog</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
-          background-image: url('background.png');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: 100% 100%;
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: #FFDE59;
+            margin: 0;
+            padding: 0;
+            height: 100%;
         }
-        </style>
-
+        .header {
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header button {
+            margin: 0 5px;
+            background: #222;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .header a {
+            color: #FFDE59;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .blog-container {
+            max-width: 800px;
+            margin: 60px auto 40px auto;
+            background: rgba(34,34,34,0.8);
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        h1, h2, h3 {
+            color: #FFDE59;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 30px auto;
+            width: 550px;
+            height: 550px;
+            border-radius: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin: 40px 0 20px 0;
+        }
+    </style>
+</head>
+<body>
     <div class="header" id="myHeader">
-        <BUTTON><A HREF="index.html">HOME</a></BUTTON>
-        <BUTTON><A HREF="projects.html">OUR PROJECTS</a></BUTTON>
-        <BUTTON><A HREF="currentproject.html">CURRENT PROJECT: RC CARS</a></BUTTON>
-        <BUTTON><A HREF="https://github.com/pslind17/web">GITHUB PAGE</a></BUTTON>
-        <BUTTON><A HREF="log.html">LOGBOOK FOR LABS</a></BUTTON>
-        <BUTTON><A HREF="blog.html">BLOG</a></BUTTON>
-            <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </div><BR><BR>
-
-    <body text = "#FFDE59">
-          <div class="row">
-            <div class="leftcolumn">
-              <div class="card">
-                <h1><u>Semester one is over!</u></h1>
-                <h3>First semester has had someexciting developments!, January 26,2025</h3>
-                <p><h3>In this first semester we have been preparing for the RC Car build project, and plans are beiing created! This is very exciting, and building will begin soon!</h3></p>
-                <h1><u>Great last two weeks!</u></h1>
-                <h3>Rocketry, chemistry and FUN!!!!!!, June 18,2024</h3>
-                <p><h3>We had an amazing rocket launch today! It was so much fun, and though we lost a rocket, it still ended up being a good day! Thank you so much to Mr Mohr for putting together the laucnch last week. We had a great chemistry montage last week, and though some of our methods were quite unscientific we went out with a bang! Thanks to everyone for a great year!</h3></p>
-                <h1><u>Exciting News!!</u></h1>
-                <h3>First public release of the site!, Apr 26, 2024</h3>
-                <p><h3>Lots of exciting thing have been happening at AD ASTRA! We had lots of sucess at the grade 7 tour on Apr 25, and are now hosting our website on the public internet! Th 2025-26 season is shaping up to be an amazing year for AD ASTRA!</h3></p>
-                <h1><u>First 3D Print and More!</u></h1>
-                <h3>Nov 9, 2023</h3>
-                <CENTER><IMG SRC= "3d.jpg" Width="550" Height="550"></CENTER>
-                <p><h3>We have completed our first 3D print and the rocket project is off the ground (pun intended)! The science project ideas are forming and one is going to have something to do with school water quality.</h3></p>
-                <h1><u>First Ad Astra Blog Post!</u></h1>
-                <h3>Welcome!, Oct 30, 2023</h3>
-                <p><h3>Here we will post exciting updates or developments with the club! It is a great space to share ideas and talk about or plans!</h3></p>
-              </div>
-          <div class="footer">
-            <h2>You Are All Caught Up!</h2>
-          </div>
-    </body>
+        <button><a href="index.html">HOME</a></button>
+        <button><a href="projects.html">OUR PROJECTS</a></button>
+        <button><a href="currentproject.html">CURRENT PROJECT</a></button>
+        <button><a href="https://github.com/pslind17/web">GITHUB PAGE</a></button>
+        <button><a href="log.html">LOGBOOK FOR LABS</a></button>
+        <button><a href="blog.html">BLOG</a></button>
+    </div>
+    <div class="blog-container">
+        <h1><u>Semester one is over!</u></h1>
+        <h3>First semester has had some exciting developments!<br>January 26, 2025</h3>
+        <p>In this first semester we have been preparing for the RC Car build project, and plans are being created! This is very exciting, and building will begin soon!</p>
+        
+        <h1><u>Great last two weeks!</u></h1>
+        <h3>Rocketry, chemistry and FUN!<br>June 18, 2024</h3>
+        <p>We had an amazing rocket launch today! It was so much fun, and though we lost a rocket, it still ended up being a good day! Thank you so much to Mr Mohr for putting together the launch last week. We had a great chemistry montage last week, and though some of our methods were quite unscientific we went out with a bang! Thanks to everyone for a great year!</p>
+        
+        <h1><u>Exciting News!!</u></h1>
+        <h3>First public release of the site!<br>Apr 26, 2024</h3>
+        <p>Lots of exciting things have been happening at AD ASTRA! We had lots of success at the grade 7 tour on Apr 25, and are now hosting our website on the public internet! The 2025-26 season is shaping up to be an amazing year for AD ASTRA!</p>
+        
+        <h1><u>First 3D Print and More!</u></h1>
+        <h3>Nov 9, 2023</h3>
+        <img src="3d.jpg" alt="First 3D Print">
+        <p>We have completed our first 3D print and the rocket project is off the ground (pun intended)! The science project ideas are forming and one is going to have something to do with school water quality.</p>
+        
+        <h1><u>First Ad Astra Blog Post!</u></h1>
+        <h3>Welcome!<br>Oct 30, 2023</h3>
+        <p>Here we will post exciting updates or developments with the club! It is a great space to share ideas and talk about our plans!</p>
+    </div>
+    <div class="footer">
+        <h2>You Are All Caught Up!</h2>
 
 </HTML>
