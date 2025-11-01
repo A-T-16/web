@@ -5,8 +5,8 @@
     <title>Ad Astra Home</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
-        /* full-screen GIF placed as an <img> so we can restart it with JS when needed */
-        #bg-loop {
+        /* full-screen video background */
+        #bg-video {
             position: fixed;
             top: 0;
             left: 0;
@@ -18,12 +18,11 @@
         }
 
         body {
-            /* removed background-image here (we use the <img> instead) */
             color: #FFDE59;
             margin: 0;
             padding: 0;
             height: 100%;
-            background: transparent; /* fallback color if GIF fails */
+            background: transparent; /* fallback color if video fails */
         }
         .header {
             padding: 10px 0;
@@ -55,8 +54,13 @@
     </style>
 </head>
 <body>
-    <!-- Background GIF as an <img> so we can programmatically restart it -->
-    <img id="bg-loop" src="02-34-11-741_512.gif" alt="" aria-hidden="true">
+    <!-- Background video placed as a <video> so it natively loops -->
+    <video id="bg-video" autoplay muted loop playsinline poster="poster.jpg">
+        <source src="AD_ASTRA_2.mp4" type="video/mp4">
+        <!-- Optional fallback: provide a WebM version for better compression/compatibility -->
+        <!-- <source src="AD_ASTRA_2.webm" type="video/webm"> -->
+        <!-- Fallback content -->
+    </video>
 
     <div class="header" id="myHeader">
         <button><a href="index.html">HOME</a></button>
@@ -66,7 +70,7 @@
         <button><a href="log.html">LOGBOOK FOR LABS</a></button>
         <button><a href="blog.html">BLOG</a></button>
     </div>
-   
+    <img src="Copy of AD ASTRA (1).png" alt="Ad Astra Logo" class="logo">
     <h1>
      Welcome to the LTSS Ad Astra Webpage!<br>
       Ad Astra is a STEM and ADST club dedicated to providing the resources and support students need to push the limits of their capabilities.<br>
@@ -74,38 +78,16 @@
     </h1>
 
     <script>
-    /*
-      Some GIF files are authored to only play a limited number of times.
-      Browsers cannot force a GIF to loop beyond what is encoded inside the file.
-      Workaround: periodically reload the <img> src with a cache-busting query string to restart the GIF.
-      This effectively makes the animation appear to loop indefinitely.
-
-      Adjust GIF_RESTART_INTERVAL_MS if you know the GIF's duration (set it slightly above
-      the GIF's playback length so it restarts when it finishes). If unsure, 5000ms is a reasonable default.
-    */
-    (function() {
-        const GIF_SRC = "addy gif.gif";
-        // Interval in milliseconds to restart the GIF. Increase if your GIF is longer.
-        const GIF_RESTART_INTERVAL_MS = 5000;
-
-        const img = document.getElementById('bg-loop');
-
-        function restartGif() {
-            // Add a timestamp query to force the browser to reload the image and restart the animation
-            img.src = GIF_SRC + "?_=" + Date.now();
+    // Pause video when tab is hidden to save resources, resume when visible again
+    document.addEventListener('visibilitychange', function() {
+        const v = document.getElementById('bg-video');
+        if (!v) return;
+        if (document.hidden) {
+            v.pause();
+        } else {
+            v.play().catch(() => {});
         }
-
-        // Ensure it starts (some browsers may cache and not animate until reloaded)
-        restartGif();
-
-        // Re-start on a regular interval so the animation never permanently stops
-        setInterval(restartGif, GIF_RESTART_INTERVAL_MS);
-
-        // Optional: restart on visibility change so background restarts when user returns to tab
-        document.addEventListener('visibilitychange', function() {
-            if (!document.hidden) restartGif();
-        });
-    })();
+    });
     </script>
 </body>
 </html>
