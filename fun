@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ad Astra Home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            background-image: url('flipped-background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: #FFDE59;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .header {
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header button {
+          image url('Copy of AD ASTRA (1).png')
+        }
+        .header a {
+            color: #FFDE59;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            color: #FFDE59;
+            margin-top: 40px;
+        }
+        .logo {
+            display: block;
+            margin: 40px auto 20px auto;
+            width: 550px;
+            height: 550px;
+        }
+              .footer {
+            padding: 10px 0;
+            text-align: center;
+        }
+        .footer button {
+            margin: 0 5px;
+            background: #222;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+             }
+        .header a {
+            color: #FFDE59;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <button><a href="index.html">HOME</a></button>
+        
+    </div>
+  <img src="Copy of AD ASTRA (1).png" alt="Ad Astra Logo" class="logo">
+    <h1>
+     Welcome to the LTSS Ad Astra Webpage!<br>
+      Ad Astra is a STEM and ADST club dedicated to providing the resources and support students need to push the limits of their capabilities.<br>
+    This webpage serves as a home base for Ad Astra and is a platform to help our memebers learn and explore the world of web design.
+    </h1>
+    <div class="footer" id="myFooter">
+        <button><a href="blog.html">chillz</a></button>
