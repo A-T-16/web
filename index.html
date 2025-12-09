@@ -80,12 +80,18 @@
     <div class="footer" id="myFooter">
         <button><a href="fun.html">CLICK FOR FUN</a></button>
 
-        <script src="js/java.js"></script> // Javascript file ( Dark Mode)
-<script>  new Darkmode(options).showWidget();   // Import Your JavaScript file here ( Options File)
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
 </script>
-// Import Your JavaScript file here 
-// <Script src ="java.js"></script>
-   
+import Darkmode from 'darkmode-js';
+
+new Darkmode().showWidget();
+        
 
 
 
