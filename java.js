@@ -1,15 +1,15 @@
-var options = {
+const options = {
   bottom: '64px', // default: '32px'
-  right: '32px', // default: '32px'
-  left: 'unset', // default: 'unset'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
   time: '0.5s', // default: '0.3s'
-  mixColor: '#6664b5', // default: '#fff'
-  backgroundColor: '#6664b5',  // default: '#fff'
-  buttonColorDark: '#182c0f',  // default: '#100f2c'
-  buttonColorLight: '#ffde59', // default: '#fff'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
   saveInCookies: false, // default: true,
   label: '🌓', // default: ''
-  autoMatchOsTheme: true // default: true // Check OS Theme while loading the website
+  autoMatchOsTheme: true // default: true
 }
 
 const darkmode = new Darkmode(options);
